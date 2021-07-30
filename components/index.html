@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon Icon -->
-    <link rel="icon" href="dish.svg">
+    <link rel="icon" href="../components/assets/dish.svg">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
@@ -22,11 +22,14 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/15bec15b87.js" crossorigin="anonymous"></script>
 
+    <!--========== BOX ICONS ==========-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- Scroll Reveal JS -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../components/css/styles.css">
 
     <title>ChopFast</title>
 </head>
@@ -38,137 +41,34 @@
     </a>
 
     <!-- Navigation Section Bar Starts Here -->
-    <section id="home">
-    <nav class="navbar fixed-top navbar-expand-md navbar-custom">
-        <a class="navbar-brand" href="#">
-            <h1 class="navbar-brand">Logo</h1>
-        </a>
-        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" 
-            data-target="#navbarSupportedContent">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="nav-menu collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link active-links" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
-                    data-toggle="dropdown">
-                    Restaurants
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Demo Restaurant</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Demo Restaurant</a>
-                    </div>
-                </li> 
-                <li class="nav-item pull-left">
-                    <div>
-                        <a href="#" type="button" class="btn btn-colour-1 btn-md rounded-pill" 
-                        data-toggle="modal" data-target="#exampleModal">Sign up</a>
-                    </div>
-                </li>          
-            </ul>
-        </div>
-    </nav>
-
-    <!-- NavBar Section Ends Here -->
-
-
-
-  <!-- Modal For The Sign In Button -->
-
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" 
-    aria-hidden="true">
-    <div class="modal-dialog signin-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Logo</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body signin-modal">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#signup" role="tab" 
-                  aria-controls="home" aria-selected="true">Sign Up</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#signin" role="tab" 
-                  aria-controls="profile" aria-selected="false">Sign In</a>
-                </li>
-            </ul>
-          <div class="social-login">
-              <p class="sub-tit">With social network</p>
-              <div social-log>
-                  <a href="#"></a><i style="color: #4968ad" class="social-icons fab fa-facebook-f"></i>
-                  <a href="#"></a><i style="color: #49a1eb" class=" social-icons fab fa-twitter"></i>
-                  <a href="#"></a><i style="color: #000000" class="social-icons fab fa-google-plus"></i>
-              </div>
-              <p>or</p>
+    <nav class="navbar fixed-top custom-navbar">
+      <span class="navbar-brand mb-0 h1">Logo</span>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" id="home" href="#home">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" 
+            aria-haspopup="true" aria-expanded="false">Restaurants</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Demo Restaurant</a>
+            <a class="dropdown-item" href="#">Demo Restaurant</a>
           </div>
-          <div class="tab-content signin-tab" id="myTabContent">
-            <div class="tab-pane fade show active" id="signup" role="tabpanel" aria-labelledby="home-tab">
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputText" 
-                        aria-describedby="textHelp" placeholder="Username">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail" 
-                        aria-describedby="emailHelp" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword" 
-                        placeholder="Password">
-                    </div>
-                    <button type="submit" class="btn btn-colour-1 btn-block rounded-pill">
-                        Create An Account
-                    </button>
-                    <p class="signin-link">Already have an Account ? 
-                    <a id="profile-tab" 
-                      data-toggle="tab" href="#signin" role="tab" aria-controls="profile" 
-                      aria-selected="false">Sign In
-                    </a>
-                    </p>
-                </form>
-            </div>
-            <div class="tab-pane fade" id="signin" role="tabpanel" aria-labelledby="profile-tab">
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputText" 
-                        aria-describedby="textHelp" placeholder="Username">
-                    </div>
-                    <div class="">
-                        <input type="password" class="form-control" id="exampleInputPassword" 
-                        placeholder="Password">
-                    </div>
-                    <p class="forgot-link signin-link"><a href="#">Forgot your Password ?</a></p>
-                    <button type="submit" class="btn btn-colour-1 btn-block rounded-pill">Login</button>
-                    <p class="signin-link">New to Chopfast ? 
-                      <a id="home-tab" data-toggle="tab" href="#signup" role="tab" aria-controls="home" 
-                      aria-selected="true"">Sign Up
-                      </a>
-                    </p>
-                </form>
-            </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-sm rounded-pill custom-button" role="button" href="../components/register.html">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fa-fas" href="cartItem.html">
+            <i class="fa" style="font-size:24px">&#xf07a;</i>
+            <span class='badge badge-warning' id='lblCartCount'>0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  
+   <!--  Navigation Section Bar Ends Here -->
 
 
 
@@ -176,7 +76,7 @@
 
     <section class="hero-section">
 
-        <div class="hero-img" style="background-image: url(pizza.jpeg);">
+        <div class="hero-img" style="background-image: url(../components/assets/pizza.jpeg);">
             <div class="feature-box col-lg-6 hero-text">
                 <h2>ChopFast</h2>
                 <p>We believe good food offer great smile</p>
@@ -187,7 +87,9 @@
         </div>
 
     </section>
+
 </section>
+
     <!-- Hero Section Ends Here -->
 
 
@@ -198,7 +100,7 @@
 
         <div class="about__container  bd-grid">
             <div class="about__data">
-                <span class="section-subtitle about__initial"><h5 class="abt-abt">About Us</h5></span>
+                <span class="section-subtitle about__initial"><h5 style="color: #A77BCA;" class="abt-abt">About Us</h5></span>
                 <h4 class="abt-abt section-title about__initial">We deliver the best food</h4>
                 <p class="para-para about__description">we deliver the best food in the entire city, 
                   with excellent customer service, the best meals at the best price, visit us
@@ -206,7 +108,7 @@
                 <button class="btn btn-outline btn-lg rounded-pill">More</button>
             </div>
 
-            <img src="pancakes.jpg" alt="" class="about__img">
+            <img src="../components/assets/pancakes.jpg" alt="" class="about__img">
         </div>
 
     </section>
@@ -515,6 +417,48 @@
 
     <!-- Services Section Ends Here -->
 
+     <!-- Menu Section Starts Here-->
+
+     <section class="menu section bd-container" id="menu">
+
+      <h2 class="section-title" 
+      style="text-align: center;
+      padding-top: 5rem;
+      font-family: 'Ubuntu';
+      font-size: 1.5rem;
+      position: relative;
+      margin: 20px 0 40px;
+      color: #393939;">
+        Popular Menu
+      </h2>
+
+      <div class="menu__container bd-grid product-list">
+          <div class="menu__content">
+              <img src="../components/assets/bacon.jpg" alt="" class="menu__img">
+              <h3 class="menu__name">Barbecue salad</h3>
+              <span class="menu__preci">$22.00</span>
+              <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+          </div>
+
+          <div class="menu__content">
+              <img src="../components/assets/cake.jpg" alt="" class="menu__img">
+              <h3 class="menu__name">Salad with fish</h3>
+              <span class="menu__preci">$12.00</span>
+              <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+          </div>
+          
+          <div class="menu__content">
+              <img src="../components/assets/kimchi.jpg" alt="" class="menu__img">
+              <h3 class="menu__name">Spinach salad</h3>
+              <span class="menu__preci">$9.50</span>
+              <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+          </div>
+      </div>
+
+  </section>
+
+  <!-- Menu section Ends Here -->
+
 
 
     <!-- Customer Reviews Starts Here  -->
@@ -524,7 +468,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-center m-auto">
-                    <h3 class="hap-cus"
+                    <h3 class="hap-cus section-title"
                     style="text-align: center;
                            padding-top: 5rem;
                            font-family: 'Ubuntu';
@@ -538,7 +482,7 @@
                     <div id="myCarousel" class="carousel slide" data-interval="false">
                         <div class="carousel-inner">
                             <div class="item carousel-item active">
-                                <div class="img-box"><img src="girl1.jpg" alt="Customer"></div>
+                                <div class="img-box"><img src="../components/assets/girl1.jpg" alt="Customer"></div>
                                 <p class="testimonial">
                                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est soluta a quae. 
                                   Quisquam animi esse, mollitia debitis.
@@ -546,7 +490,7 @@
                                 <p class="overview"><b>Loveday Alfred</b>, software Developer</p>
                             </div>
                             <div class="item carousel-item">
-                                <div class="img-box"><img src="girl.jpg" alt="Customer"></div>
+                                <div class="img-box"><img src="../components/assets/girl2.jpg" alt="Customer"></div>
                                 <p class="testimonial">
                                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est soluta a quae.
                                   Quisquam animi esse, mollitia debitis.
@@ -554,7 +498,7 @@
                                 <p class="overview"><b>Salemzii</b>, software Developer</p>
                             </div>
                             <div class="item carousel-item">
-                                <div class="img-box"><img src="girl2.jpg" alt="Customer"></div>
+                                <div class="img-box"><img src="../components/assets/girl.jpg" alt="Customer"></div>
                                 <p class="testimonial">
                                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est soluta a quae.
                                   Quisquam animi esse, mollitia debitis.</p>
@@ -674,7 +618,7 @@
     </script>
 
     <!-- Custom JavaScript -->
-    <script src="app.js"></script>
+    <script src="../components/js/app.js"></script>
     
 </body>
 </html>

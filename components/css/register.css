@@ -1,0 +1,317 @@
+/* Header */
+.custom-navbar {
+    background-color: #f2f4f3;
+  }
+  
+  .navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Pacifico", sans-serif;
+    padding: 0.7rem;
+    color: #A77BCA;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #A77BCA;
+    font-size: 1.2rem;
+    font-family: "Ubuntu";
+  }
+  
+  .nav-link:hover {
+    color: #702082;
+  }
+  
+  .dropdown-menu {
+    background-color: #f2f4f3;   
+  }
+     
+  .dropdown-menu:hover,
+  .dropdown-menu:focus {
+    color: purple;
+  }
+  
+  .dropdown-item {
+    color: #A77BCA;
+    font-size: 1.2rem;
+    font-family: "Ubuntu";
+  }
+  
+  .dropdown-item:hover {
+    color: #702082;
+    background-color: #f2f4f3;
+  }
+  
+  .custom-button {
+    background-color: #A77BCA;
+    color: #fff;
+  }
+  
+  .custom-button:hover,
+  .custom-button:focus,
+  .custom-button:active {
+    background-color: #702082;
+    color: #fff;
+  }
+  
+  
+  .fa {
+    color: black;
+  }
+  
+  .badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+  }
+  
+  .label-warning[href],
+  .badge-warning[href] {
+    background-color: #c67605;
+  }
+  #lblCartCount {
+      font-size: 12px;
+      background: #A77BCA;
+      color: #fff;
+      padding: 0 5px;
+      vertical-align: top;
+      margin-left: -10px; 
+      margin-top: -8px;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 969px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+        padding: 0.3rem;
+    }
+    .nav-link {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        font-weight: bold;
+    }
+    .dropdown-item {
+        font-size: 0.8rem;
+    }
+    .custom-button {
+        font-size: 0.7rem;
+        padding: 0.5rem;
+    }
+    .fa {
+        font-size: 1rem;
+    }
+    .fa-fas {
+        position: relative;
+        left: 8px;
+    }
+  }
+  
+  
+
+
+
+:root {
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.2;
+    --primary-blue: #A77BCA;
+}
+
+body {
+    padding-top: 4rem;
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: "Pacifico", sans-serif;
+    color: var(--primary-blue);
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-blue);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #702082;
+}
+
+.small {
+    font-size: 80%;
+    text-align: center;
+}
+
+.split-screen {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    height: 200px;
+}
+
+.left, .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .copy {
+    color: black;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.5rem;
+    line-height: 2.5;
+}
+
+.left p {
+    font-weight: 400;
+}
+
+.right .copy {
+    color: black;
+    text-align: center;
+}
+
+.right .copy p {
+    margin: 1.5em 0;
+    font-size: 0.875rem;
+}
+
+.right form {
+    width: 328px;
+}
+
+.btn-outline {
+    color: #A77BCA;
+    border-color: #A77BCA;
+    letter-spacing: 0.05em;
+    font-size: 0.8rem;
+    width: 50%;
+    height: 50%;
+    margin: 0rem 0.3rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .diff-btn {
+      background: #A77BCA;
+      color: #fff;
+  }
+  
+  .btn-outline:hover,
+  .btn-outline:active,
+  .btn-outline:focus,
+  .btn-outline.active {
+    background: #702082;
+    color: white;
+    border-color: #702082;
+  }
+
+  .custom-btn {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0.9rem;
+  }
+
+  .log-fa {
+      margin: 0rem 1rem 0rem 0rem;
+      font-size: 1rem;
+  }
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+
+.input-container .password {
+    position: relative;
+}
+
+.input-container .password i {
+    position: absolute;
+    top: 45px;
+    right: 16px;
+}
+
+.signup-btn {
+    display: block;
+    width: 100%;
+    background: var(--primary-blue);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 9px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.signup-btn:hover {
+    background: #702082;
+    cursor: pointer;
+}
+
+  /* Footer */
+  #footer {
+    padding: 1.5% 10%;
+    text-align: center;
+   }
+   
+   .social-icon {
+     margin: 20px 8px;
+     font-size: 1.5rem;
+   }
+   
+   .footer-icons .social-icon {
+     transition: transform 2s;
+   }
+   .footer-icons .social-icon:hover {
+     transform: translateY(-15px);
+   }
+   
+   .footer-text {
+     font-size: 0.8rem;
+   }
+
+
+@media screen and (min-width: 900px) {
+    .split-screen {
+        flex-direction: row;
+        height: 100vh;
+    }
+    .left,
+    .right {
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+}
